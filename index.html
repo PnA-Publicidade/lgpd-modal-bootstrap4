@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="generator" content="" />
+    <title>LGPD - Modal Bootstrap 4</title>
+    <meta property="og:title" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Animate css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link href="/css/bootstrap-side-modals-min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="border-top: 10px solid #dbd6d6;border-bottom: 1px solid #dee2e600;padding: 0;">
+            <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> -->
+          </div>
+          <div class="modal-body" style="padding-top: 0;padding-bottom: 0;">
+            <div class="container">
+              <div class="row accordion">
+                <div class="col-5" style="border-right-color: #dbd6d6;border-right-width: 2px;border-right-style: solid;">
+                  <button class="btn btn-link btn-block text-left" type="button" id="collapseOneButton" style="padding-top: 15px;">
+                    Configurações de privacidade
+                  </button>
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" id="collapseTwoButton">
+                    Lei Geral de Proteção de Dados
+                  </button>
+                </div>
+                <div class="col-7">
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" >
+                    <div class="card-body">
+                      <h6 style="font-weight: bold;">Configurações de privacidade</h6>
+                      <p style="color: #606060;font-size: 14px;text-justify: initial;">
+                        Este site usa cookies funcionais e scripts externos para melhorar sua experiência. 
+                        Quais cookies e scripts são usados ​​e como eles afetam sua visita é especificado 
+                        à esquerda. Você pode alterar suas configurações a qualquer momento. Suas 
+                        escolhas não afetarão sua visita.
+                        </br><b>INFO:</b> Essas configurações se aplicarão apenas ao navegador e ao 
+                        dispositivo que você está usando no momento.
+                      </p>
+                    </div>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                      <h6 style="font-weight: bold;">Lei Geral de Proteção de Dados</h6>
+                      <p style="color: #606060;font-size: 14px;text-justify: initial;">
+                        A lei geral de proteção de dados pessoais (LGPD), Lei: 13.709/2018, tem como 
+                        objetivo regulamentar o tratamento de dados pessoais pelas empresas, uma vez 
+                        que os dados pessoais ganharam grande importância na economia moderna, pois 
+                        permitem fazer predições, analisar perfis de consumo, opinião, entre outras 
+                        atividades.
+                      </br></br>Para mais informações no <a href="https://www.gov.br/governodigital/pt-br/governanca-de-dados/guia-lgpd.pdf" target="_blank" rel="noopener noreferrer">GUIA LGPD</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="lgpdCookie1">Aceitar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal bottom fade"
+      id="bottom_modal"
+      tabindex="-1"
+      role="dialog"
+      data-backdrop="static"
+      aria-labelledby="bottom_modal"
+      style="z-index: 1049;"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background: rgb(26, 26, 26) none repeat scroll 0% 0%;color: white;text-align: center;">
+          <div class="modal-body" style="padding-top: 10px;padding-bottom: 10px;">
+            <p style="margin-bottom: 0;font: inherit;color: inherit;">
+              Este site usa cookies funcionais e scripts externos para melhorar sua experiência.
+              <a href="#" data-toggle="modal" data-target="#staticBackdrop" style="text-decoration: underline;padding-left: 10px;padding-right: 10px;font: inherit;color: inherit;">Mais Informações</a>
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" id="lgpdCookie0">Aceitar</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="js/script-min.js"></script>
+  </body>
+</html>
